@@ -55,9 +55,11 @@ header{
   top: 5vh;
   left: 5vw;
   font-family: $font-stack;
+  z-index: 10;
 }
 
 .a__name-text{
+
 
   h2{
     margin: 0;
@@ -89,6 +91,7 @@ header{
   grid-area: button;
   display: flex;
   justify-content: center;
+  z-index: 10;
 }
 .a__button{
   position: absolute;
@@ -96,7 +99,7 @@ header{
   padding: .8rem ;
   display: flex;
   justify-content: center;
-  z-index: 1;
+  z-index: 10;
   width: 30vw;
   border: 2px solid;
   border-radius: 10px;
@@ -127,10 +130,11 @@ header{
     }
   }
   .a__button{
+    background-color: $color-mo;
     border-color:white;
     a{
       color: white;
-      background-color: $color-mo;
+
     }
   }
 }
@@ -145,7 +149,7 @@ header{
   }
 
   .a__image {
-z-index: 0;
+    z-index: 0;
     img {
       left: -0;
       width: 120%;
@@ -178,9 +182,10 @@ z-index: 0;
   }
   .a__button{
     border-color:white;
+    background-color: $color-gmac;
     a{
       color: white;
-      background-color: $color-gmac;
+
     }
   }
 }
@@ -205,9 +210,10 @@ z-index: 0;
   }
   .a__button{
     border-color:$color-aspen;
+    background-color: white;
     a{
       color: $color-aspen;
-      background-color: white;
+
     }
   }
 }
@@ -224,6 +230,7 @@ z-index: 0;
     top: 25vh;
     width: 100%;
     margin: 0 auto;
+    z-index: 0;
 
     img {
       left: -20vw;
@@ -238,4 +245,204 @@ z-index: 0;
       color: white;
     }
   }
+}
+
+
+
+
+/*  END OF SMART PHONE  */
+@media screen and (min-width : 480px) {
+
+
+  #monica {
+    .a__image {
+
+
+    img {
+      left: 0;
+      width: 130%;
+    }
+  }
+}
+  #tp{
+    .a__image {
+      img {
+        width: 95%;
+      }
+    }
+  }
+  #gmac{
+    .a__image {
+
+      img {
+        left: 0;
+        width: 140%;
+      }
+    }
+  }
+  #aspen{
+    .a__image {
+      top: 0;
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+  #iss{
+    .a__image {
+      top: 15vh;
+
+      img {
+        left: -10;
+        width: 130%;
+      }
+    }
+  }
+
+
+
+  /*  END 480  */
+}
+
+/*  END OF SMART PHONE  */
+@media screen and (min-width : 600px) and (orientation : landscape) {
+
+  .agency {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "name image"
+      "button image";
+  }
+  .a__name{
+    align-self: end;
+    top: unset;
+    left: 5vw;
+  }
+
+  .a__button{
+    bottom: unset;
+    left: 5vw;
+    margin-top: 1rem;
+    justify-content: center;
+    z-index: 1;
+    width: 15vw;
+  }
+  #monica {
+    .a__image {
+      top: 20vh;
+      left: 10vh;
+      align-self: flex-start;
+
+
+      img {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+  #tp{
+    .a__image {
+      left: 20vw;
+      img {
+        width: 65%;
+      }
+    }
+  }
+  #gmac{
+    .a__image {
+      left: 10vw;
+      top: 5vh;
+
+      img {
+        left: 0;
+        width: 110%;
+      }
+    }
+  }
+  #aspen{
+    .a__image {
+      align-self: start;
+      top: 10vh;
+
+      img {
+        width: 40%;
+      }
+    }
+  }
+  #iss{
+    .a__image {
+      top: -18vh;
+      align-self: center;
+
+      img {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+
+  /*  END OF 720  */
+}
+
+
+
+/*  END OF SMART PHONE  */
+@media screen and (min-width : 1024px) and (orientation : landscape) {
+
+  #monica {
+    .a__image {
+
+
+      img {
+        left: 10vw;
+        width: 80%;
+      }
+    }
+  }
+  #tp{
+    .a__image {
+      img {
+        width: 55%;
+      }
+    }
+  }
+  #gmac{
+    .a__image {
+      top: 8vh;
+
+      img {
+        left: 0;
+        width: 80%;
+      }
+    }
+  }
+  #aspen{
+    .a__image {
+      top: 7vh;
+
+      img {
+        width: 33%;
+      }
+    }
+  }
+  #iss{
+    .a__image {
+      top: -10vh;
+
+      img {
+        left: 10vh;
+        width: 80%;
+      }
+    }
+  }
+
+
+
+  /*  END OF 1024  */
 }
