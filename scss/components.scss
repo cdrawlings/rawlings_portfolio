@@ -442,7 +442,6 @@ header{
     }
 
     .bezel-t{
-
       position: absolute;
       top: 0;
       left: -15vw;
@@ -460,6 +459,7 @@ header{
 
 
 /*  END OF SMART PHONE  */
+
 @media screen and (min-width : 480px) {
   #monica {
     .a__image {
@@ -498,6 +498,51 @@ header{
       img {
         left: -10;
         width: 130%;
+      }
+    }
+  }
+  #p_iss{
+    .p__image{
+      display: flex;
+      justify-content:unset;
+      position: unset;
+      align-self: center;
+      width: 100%;
+
+      img {
+        position: absolute;
+        width: 35%;
+        top: 10vh;
+        right: 10vw;
+        box-shadow: 2px 2px 5px 2px #666;
+      }
+
+    }
+    .p__image-no {
+      grid-area: image;
+      position: absolute;
+      top: 25vh;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      margin: 0;
+
+      img{
+        width: 100%;
+      }
+
+      .bezel-t{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+      .bezel-r{
+        position: absolute;
+        top: 50vw;
+        left: 0;
+        width: 100%;
       }
     }
   }
@@ -587,10 +632,136 @@ header{
   }
 
 
+  .portfolio{
+    grid-template-columns: 35vw 65vw;
+    grid-template-rows: 100vh;
+    grid-template-areas:
+      "name image ";
+  }
+
+
+  .p__image{
+
+    img {
+        position: unset;
+        width: 100%;
+      }
+    }
+
+  .p__text{
+    position: unset;
+    align-self: center;
+    bottom: unset;
+    left: unset;
+  }
+  .p__name{
+    position: absolute;
+    left: 5vw;
+  }
+  .p__desc{
+    position: absolute;
+    left: 5vw;
+    width: 28vw;
+    margin-top: 2rem;
+  }
+
+
+  #p_tp{
+
+    .p__image{
+      width: 100%;
+
+      img {
+        position: absolute;
+        width: 50%;
+        right: 10vw;
+        top: -10vh;
+      }
+    }
+  }
+
+  #p_gmac{
+    .p__image{
+      display: flex;
+      justify-content:unset;
+      position: unset;
+      align-self: start;
+      width: 100%;
+
+      img {
+        position: absolute;
+        align-self: unset;
+        width: 50%;
+        top: 20vh;
+      }
+    }
+  }
+  #p_aspen{
+    .p__image{
+      display: flex;
+      justify-content:unset;
+      position: unset;
+      align-self: center;
+      width: 100%;
+
+      img {
+        position: unset;
+        align-self: center;
+        width: 50%;
+      }
+    }
+  }
+  #p_iss{
+    .p__image{
+      display: flex;
+      justify-content:unset;
+      position: unset;
+      align-self: center;
+      width: 100%;
+
+      img {
+        position: absolute;
+        width: 35%;
+        top: 10vh;
+        right: 10vw;
+        box-shadow: 2px 2px 5px 2px #666;
+      }
+
+    }
+    .p__image-no {
+      grid-area: image;
+      position: absolute;
+      top: 25vh;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+      margin: 0;
+
+      img{
+        width: 100%;
+      }
+
+      .bezel-t{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+      }
+      .bezel-r{
+        position: absolute;
+        top: 0;
+       left: 45vw;
+        width: 50%;
+      }
+    }
+  }
 
 
 
-  /*  END OF 720  */
+
+
+  /*  END OF 600 and landscap  */
 }
 
 
