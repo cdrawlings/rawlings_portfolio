@@ -356,6 +356,108 @@ header{
 }
 
 
+#p_gmac{
+  .fixed_port {
+    color: $color-gmac;
+    h1{
+      color: $color-gmac;
+    }
+    a{
+      color: $color-gmac;
+    }
+  }
+  .p__image{
+    display: flex;
+    justify-content: center;
+    top: 20vh;
+    img {
+      position: absolute;
+      width: 80%;
+      top: 1vh;
+      box-shadow: 2px 2px 5px 2px #666;
+    }
+  }
+}
+
+#p_aspen{
+  .fixed_port {
+    color: $color-aspen;
+    h1{
+      color: $color-aspen;
+    }
+
+    a{
+      color: $color-aspen;
+    }
+  }
+  .p__image{
+    display: flex;
+    justify-content: center;
+    top: 15vh;
+
+    img {
+      position: absolute;
+      width: 80%;
+      top: 1vh;
+      box-shadow: 2px 2px 5px 2px #666;
+    }
+  }
+}
+
+
+#p_iss{
+  .fixed_port {
+    color: $color-iss;
+    h1{
+      color: $color-iss;
+    }
+    a{
+      color: $color-iss;
+    }
+  }
+  .p__image{
+    display: flex;
+    justify-content: center;
+    top: 20vh;
+
+    img {
+      position: absolute;
+      width: 80%;
+      top: 1vh;
+      box-shadow: 2px 2px 5px 2px #666;
+    }
+
+  }
+  .p__image-no {
+    grid-area: image;
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+    margin: 0;
+
+    img{
+    }
+
+    .bezel-t{
+
+      position: absolute;
+      top: 0;
+      left: -15vw;
+      width: 150%;
+    }
+    .bezel-r{
+      position: absolute;
+      top: 40vh;
+      left: -30vw;
+      width: 160%;
+    }
+  }
+}
+
+
 
 /*  END OF SMART PHONE  */
 @media screen and (min-width : 480px) {
